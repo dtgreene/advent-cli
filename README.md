@@ -1,6 +1,6 @@
 # Advent CLI
 
-A Node.js program for solving [Advent of Code](https://adventofcode.com/) problems!
+A Node.js program for solving [Advent of Code](https://adventofcode.com/) problems 🎄
 
 ![advent-cli](https://github.com/dtgreene/advent-cli/assets/24302976/5f76d744-673a-417e-ba60-79951cdc80fa)
 
