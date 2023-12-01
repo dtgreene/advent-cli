@@ -1,8 +1,11 @@
 # Advent CLI
 
-A Node.js program for solving [Advent of Code](https://adventofcode.com/) problems 🎄
+<div align="center">
+  <div>A Node.js program for solving <a href="https://adventofcode.com/">Advent of Code</a> problems 🎄</div>
+  <br/>
+  <img src="https://github.com/dtgreene/advent-cli/assets/24302976/5f76d744-673a-417e-ba60-79951cdc80fa" width="600px" />
+</div>
 
-![advent-cli](https://github.com/dtgreene/advent-cli/assets/24302976/5f76d744-673a-417e-ba60-79951cdc80fa)
 
 
 ### Usage
