@@ -1,0 +1,17 @@
+{
+  "name": "advent2023",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Dylan Greene",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "inquirer": "^9.2.12"
+  }
+}
