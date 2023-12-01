@@ -53,8 +53,8 @@ async function promptDay() {
     },
   ]);
 
-  const solutionPath = path.resolve(__dirname, `./solutions/${day}.js`);
-  const inputPath = path.resolve(__dirname, `./solutions/${day}.txt`);
+  const solutionPath = path.resolve(__dirname, `./puzzles/${day}.js`);
+  const inputPath = path.resolve(__dirname, `./puzzles/${day}.txt`);
 
   if (existsSync(solutionPath) && existsSync(inputPath)) {
     const { part } = await inquirer.prompt([
@@ -76,8 +76,8 @@ async function promptDay() {
 }
 
 async function solveDay(day, part) {
-  const solutionPath = path.resolve(__dirname, `./solutions/${day}.js`);
-  const inputPath = path.resolve(__dirname, `./solutions/${day}.txt`);
+  const solutionPath = path.resolve(__dirname, `./puzzles/${day}.js`);
+  const inputPath = path.resolve(__dirname, `./puzzles/${day}.txt`);
 
   if (existsSync(solutionPath) && existsSync(inputPath)) {
     const input = readFileSync(inputPath, 'utf-8').trim();
