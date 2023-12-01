@@ -78,7 +78,7 @@ async function solveDay(day, part) {
   const inputPath = path.resolve(__dirname, `./solutions/${day}.txt`);
 
   if (existsSync(solutionPath) && existsSync(inputPath)) {
-    const input = readFileSync(inputPath, 'utf-8');
+    const input = readFileSync(inputPath, 'utf-8').trim();
     const { partOne, partTwo } = await import(solutionPath);
 
     if ((part === 0 && !partOne) || (part === 1 && !partTwo)) {
