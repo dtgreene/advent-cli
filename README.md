@@ -1,7 +1,7 @@
 # Advent CLI 🎄
 
 <div align="center">
-  <div>An easy way to manage NodeJS solutions for <a href="https://adventofcode.com/">Advent of Code</a> puzzles</div>
+  <div>An easy way to manage <a href="https://adventofcode.com/">Advent of Code</a> NodeJS solutions</div>
   <br/>
   <img src="https://github.com/dtgreene/advent-cli/assets/24302976/5f76d744-673a-417e-ba60-79951cdc80fa" width="600px" />
 </div>
@@ -10,13 +10,13 @@
 
 After cloning the repo (`git clone`) and installing the dependencies (`npm install`), simply run `npm start` to start the program.
 
-### Creating Puzzles
+### Creating Solutions
 
-To create a puzzle for a certain day, you'll need to create two files in the `/puzzles` directory (create the directory if it doesn't exist). One will be the puzzle solution and the other will be the puzzle input.
+To create a solution for a certain day, you'll need to create two files in the `/solutions` directory (create the directory if it doesn't exist). One will be the solution itself and the other will be the puzzle input.
 
 Example for setting up day 1:
 
-#### `/puzzles/1.js`
+#### `/solutions/1.js`
 
 ```javascript
 export function partOne(input) {
@@ -28,7 +28,7 @@ export function partTwo(input) {
 }
 ```
 
-#### `/puzzles/1.txt`
+#### `/solutions/1.txt`
 
 ```
 9cbncbxclbvkmfzdnldc
@@ -39,4 +39,4 @@ rxszdkkv3j8kjhbm
 ...
 ```
 
-The puzzle solution should have two named exports `partOne` and `partTwo`.  These functions will be called with the puzzle input as the first parameter.
+The solution file should have two named exports `partOne` and `partTwo`.  These functions will be called with the puzzle input as the first parameter.
