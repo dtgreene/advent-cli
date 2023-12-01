@@ -1,7 +1,7 @@
 # Advent CLI 🎄
 
 <div align="center">
-  <div>An easy way to manage <a href="https://adventofcode.com/">Advent of Code</a> NodeJS solutions</div>
+  <div>An easy way to manage and run <a href="https://adventofcode.com/">Advent of Code</a> NodeJS solutions</div>
   <br/>
   <img src="https://github.com/dtgreene/advent-cli/assets/24302976/5f76d744-673a-417e-ba60-79951cdc80fa" width="600px" />
 </div>
