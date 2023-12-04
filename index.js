@@ -4,23 +4,29 @@ import { fileURLToPath } from 'node:url';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import 'colors';
 
+const args = process.argv.slice(2);
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const savePath = path.resolve(__dirname, 'save.dat');
 const dayChoices = Array.from(Array(31)).map((_, index) => index + 1);
 
 async function prompt() {
   if (existsSync(savePath)) {
-    const { choice } = await inquirer.prompt([
-      {
-        type: 'list',
-        name: 'choice',
-        message: 'What would you like to do?',
-        choices: [
-          { name: 'Repeat the previous selection', value: 0 },
-          { name: 'Select a day to solve', value: 1 },
-        ],
-      },
-    ]);
+    let choice = 0;
+
+    if (!args.includes('--last')) {
+      const answer = await inquirer.prompt([
+        {
+          type: 'list',
+          name: 'choice',
+          message: 'What would you like to do?',
+          choices: [
+            { name: 'Repeat the previous selection', value: 0 },
+            { name: 'Select a day to solve', value: 1 },
+          ],
+        },
+      ]);
+      choice = answer.choice;
+    }
 
     if (choice === 0) {
       try {
